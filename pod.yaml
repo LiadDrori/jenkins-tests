@@ -4,7 +4,7 @@ spec:
     - name: regcred
   containers:
   - name: dude-on-shipod
-    image: node:16.04
+    image: node:16.13
     command:
     - cat
   securityContext:
