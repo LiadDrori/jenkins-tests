@@ -1,5 +1,7 @@
 kind: Pod
 spec:
+  imagePullSecrets:
+    - name: regcred
   containers:
   - name: dude-on-shipod
     image: paralegal/jenkins-builder:1.0.0
