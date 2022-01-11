@@ -6,8 +6,6 @@ spec:
   - name: dude-on-shipod
     image: paralegal/jenkins-builder:1.0.0
     command:
-    - sleep
-    args:
-    - 99d
+    - buildkitd
   securityContext:
     prevailed: true
