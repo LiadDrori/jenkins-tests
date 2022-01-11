@@ -8,8 +8,10 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                container('dude-on-shipod') {
                     sh 'ls -la'
                     sh 'skaffold'
+                 }
             }
         }
     }
