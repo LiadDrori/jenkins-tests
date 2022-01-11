@@ -1,6 +1,6 @@
 pipeline {
-    agent {
-        label 'custom'
+    kubernetes {
+      yamlFile 'pod.yaml'
     }
     stages {
         stage('Build') {
