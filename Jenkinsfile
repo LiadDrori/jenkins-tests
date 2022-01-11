@@ -1,7 +1,7 @@
-pipline {
+pipeline{
     agent any
     stages {
-        stage('Hello')  { 
+        stage('Hello')  {
             sh 'echo Hello'
         }
     }
