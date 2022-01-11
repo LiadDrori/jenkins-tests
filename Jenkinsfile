@@ -1,8 +1,11 @@
-pipeline{
+pipeline {
     agent any
     stages {
-        stage('Hello')  {
-            sh 'echo Hello'
+        stage('Build') {
+            steps {
+                    sh 'ls -la'
+                    sh 'skaffold'
+            }
         }
     }
 }
