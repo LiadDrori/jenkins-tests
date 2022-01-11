@@ -9,3 +9,5 @@ spec:
     - sleep
     args:
     - 99d
+  securityContext:
+    prevailed: true
