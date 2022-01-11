@@ -1,7 +1,7 @@
 kind: Pod
 spec:
   containers:
-  - name: dude_on_shipod
+  - name: dude-on-shipod
     image: paralegal/jenkins-builder:1.0.0
     command:
     - sleep
