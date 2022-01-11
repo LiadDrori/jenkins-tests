@@ -4,8 +4,8 @@ spec:
     - name: regcred
   containers:
   - name: dude-on-shipod
-    image: paralegal/jenkins-builder:1.0.0
+    image: node:16.04
     command:
-    - buildkitd
+    - cat
   securityContext:
     prevailed: true
