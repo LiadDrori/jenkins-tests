@@ -6,6 +6,8 @@ spec:
   - name: dude-on-shipod
     image: node:16.13
     command:
-    - cat
+    - sleep
+    args:
+    - "99d"
   securityContext:
     prevailed: true
