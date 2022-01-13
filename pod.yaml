@@ -3,11 +3,19 @@ spec:
   imagePullSecrets:
     - name: regcred
   containers:
-  - name: node
-    image: node:16.13
+  - name: builder
+    image: paralegal/jenkins-builder:1.0.0
     command:
-    - sleep
+    - buildkitd
     args:
-    - "99d"
+    - "&"
+    tty: true
+    resources:
+      requests:
+        cpu: 1
+        memory: 1Gi
+      limits:
+        cpu: 4
+        memory: 4Gi
   securityContext:
     prevailed: true
