@@ -3,7 +3,7 @@ spec:
   imagePullSecrets:
     - name: regcred
   containers:
-  - name: dude-on-shipod
+  - name: node
     image: node:16.13
     command:
     - sleep

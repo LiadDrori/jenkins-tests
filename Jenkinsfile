@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                container('dude-on-shipod') {
+                container('node') {
                     sh 'ls -la'
                     sh 'node --version'
                  }
